@@ -5,11 +5,11 @@ import { MagicCard } from "../ui/magic-card";
 
 const Features = () => {
     return (
-        <div className="relative flex flex-col items-center justify-center w-full py-20">
+        <div id="features" className="relative flex flex-col items-center justify-center w-full py-20">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                        Solução completa para <br /> <span className="font-subheading italic">gestão fiscal</span>
+                    <h2 className="text-2xl md:text-4xl lg:text-4xl font-heading font-medium !leading-snug mt-6">
+                        Solução completa para gestão fiscal
                     </h2>
                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
                         Automatize seus processos fiscais com nossa solução integrada ao Datasul TOTVS®. Tenha mais agilidade, segurança e conformidade em todas as suas operações.

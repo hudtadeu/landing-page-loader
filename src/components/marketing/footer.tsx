@@ -1,20 +1,18 @@
 import Link from "next/link";
 import Container from "../global/container";
 import Icons from "../global/icons";
+import Image from "next/image";
 
 const Footer = () => {
     return (
         <footer className="flex flex-col relative items-center justify-center border-t border-foreground/5 pt-16 pb-8 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32">
             <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
                 <Container>
-                    <div className="flex flex-col items-start justify-start md:max-w-[200px]">
-                        <div className="flex items-center gap-2">
-                            <Icons.icon className="w-auto h-5" />
-                            <span className="text-base md:text-lg font-medium text-foreground">
-                                XML LOADER
-                            </span>
+                    <div className="flex flex-col items-center justify-center md:max-w-[300px]">
+                        <div className="flex items-center justify-center w-full">
+                            <Image src="/images/logo1.png" alt="Logo XML Loader" width={100} height={40} className="w-20 h-20" />
                         </div>
-                        <p className="text-muted-foreground mt-4 text-sm text-start">
+                        <p className="text-muted-foreground mt-1 text-sm text-center">
                             Sistema automatizado para organizar e armazenar documentos fiscais eletrônicos (NF-e, NFS-e e CT-e) integrado ao ERP Datasul TOTVS®.
                         </p>
                     </div>
@@ -133,7 +131,7 @@ const Footer = () => {
             <Container delay={0.5} className="w-full relative mt-12 lg:mt-20">
                 <div className="mt-8 md:flex md:items-center justify-center footer w-full">
                     <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} XML LOADER. Todos os direitos reservados.
+                        &copy; {new Date().getFullYear()} CONTI CONSULTORIA. Todos os direitos reservados.
                     </p>
                 </div>
             </Container>

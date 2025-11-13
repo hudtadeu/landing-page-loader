@@ -8,11 +8,11 @@ const Analysis = () => {
         <div className="relative flex flex-col items-center justify-center w-full py-20">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug">
-                        Dashboard fiscal inteligente <br /><span className="font-subheading italic">XML Loader</span>
+                    <h2 className="text-2xl md:text-4xl lg:text-4xl font-heading font-medium !leading-snug">
+                        Dashboard fiscal inteligente XML Loader
                     </h2>
                     <p className="text-base md:text-lg text-accent-foreground/80 mt-4">
-                        Tenha controle total sobre seus documentos fiscais eletrônicos e métricas operacionais com ferramentas avançadas de análise.
+                        Tenha controle total sobre seus documentos fiscais eletrônicos e métricas operacionais.
                     </p>
                 </div>
             </Container>

@@ -40,8 +40,8 @@ const CTA = () => {
                             ease: "linear"
                         }}
                     />
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-medium !leading-snug">
-                        Pronto para automatizar seu <br /> <span className="font-subheading italic">processo fiscal</span>?
+                    <h2 className="text-3xl md:text-5xl lg:text-4xl font-heading font-medium !leading-snug">
+                        Pronto para automatizar seu processo fiscal ?
                     </h2>
                     <p className="text-sm md:text-lg text-center text-accent-foreground/80 max-w-2xl mx-auto mt-4">
                         Organize e armazene documentos fiscais eletrônicos (NF-e, NFS-e e CT-e) com o XML LOADER. Reduza riscos fiscais e esforço operacional, integrado ao ERP Datasul TOTVS®.

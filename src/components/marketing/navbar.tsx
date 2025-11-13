@@ -1,9 +1,21 @@
+"use client";
+
 import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import Icons from "../global/icons";
 import Wrapper from "../global/wrapper";
 import { Button } from "../ui/button";
 import MobileMenu from "./mobile-menu";
+
+// Função para scroll suave até a seção
+const scrollToSection = (href: string) => {
+    if (href.startsWith("#")) {
+        const el = document.querySelector(href);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+};
 
 const Navbar = () => {
     return (
@@ -20,9 +32,17 @@ const Navbar = () => {
                         <ul className="flex items-center gap-8">
                             {NAV_LINKS.map((link, index) => (
                                 <li key={index} className="text-sm font-medium -1 link">
-                                    <Link href={link.href}>
+                                    <a
+                                        href={link.href}
+                                        onClick={e => {
+                                            if (link.href.startsWith("#")) {
+                                                e.preventDefault();
+                                                scrollToSection(link.href);
+                                            }
+                                        }}
+                                    >
                                         {link.name}
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
@@ -34,11 +54,16 @@ const Navbar = () => {
                                 Entrar
                             </Button>
                         </Link>
-                        <Link href="/register" className="hidden lg:block">
-                            <Button variant="blue">
-                                Cadastrar
-                            </Button>
-                        </Link>
+                        <Button
+                            variant="blue"
+                            className="hidden lg:block"
+                            onClick={e => {
+                                e.preventDefault();
+                                scrollToSection("#contact");
+                            }}
+                        >
+                            Cadastrar
+                        </Button>
                         <MobileMenu />
                     </div>
                 </div>

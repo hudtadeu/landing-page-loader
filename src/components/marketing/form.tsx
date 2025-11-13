@@ -6,9 +6,9 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Button } from "@/components/ui/button";
 import { MagicCard } from "../ui/magic-card";
 
-const LanguageSupport = () => {
+const Form = () => {
     return (
-        <div className="relative flex flex-col items-center justify-center max-w-2xl py-20 mx-auto">
+        <div id="contact" className="relative flex flex-col items-center justify-center max-w-2xl py-20 mx-auto">
             <Container delay={0.2}>
                 <MagicCard
                     gradientFrom="#38bdf8"
@@ -70,4 +70,4 @@ const LanguageSupport = () => {
     )
 };
 
-export default LanguageSupport
+export default Form

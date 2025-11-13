@@ -77,7 +77,16 @@ const Images = {
             <rect x="65" y="15" width="50" height="50" rx="10" transform="rotate(90 65 15)" fill="#3B82F6" />
             <rect x="65" y="15" width="50" height="50" rx="10" transform="rotate(90 65 15)" stroke="url(#paint0_linear_362_208)" />
             
-            {/* adicionar path */}
+            {/* Logo no centro */}
+            <image 
+            href="/images/logoc.png"   // ou .svg se for vetor
+            x="20" 
+            y="20" 
+            width="40" 
+            height="40" 
+            preserveAspectRatio="xMidYMid meet"
+            style={{ filter: "drop-shadow(0px 4px 8px rgba(0,0,0,0.3))" }} // opcional: sombra bonita
+            />
 
             <mask id="path-6-inside-1_362_208" fill="white">
                 <path d="M85 -10C88.3137 -10 91 -7.31371 91 -4L91 14C91 17.3137 88.3137 20 85 20L67 20C63.6863 20 61 17.3137 61 14L61 -4C61 -7.31371 63.6863 -10 67 -10L85 -10Z" />

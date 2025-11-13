@@ -17,7 +17,7 @@ const SOCIAL_PLATFORMS = [
     { icon: Icons.facebook, position: "right-3", size: "small", iconSize: "small", className: "hidden lg:flex" }
 ];
 
-const Integration = () => {
+const Social = () => {
 
     const getPositionClasses = (position: string) => {
         switch (position) {
@@ -108,4 +108,4 @@ const Integration = () => {
     )
 };
 
-export default Integration;
+export default Social;

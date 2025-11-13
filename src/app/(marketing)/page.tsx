@@ -4,8 +4,9 @@ import Companies from "@/components/marketing/companies";
 import CTA from "@/components/marketing/cta";
 import Features from "@/components/marketing/features";
 import Hero from "@/components/marketing/hero";
-import Integration from "@/components/marketing/integration";
-import LanguageSupport from "@/components/marketing/lang-support";
+import Social from "@/components/marketing/social";
+import Form from "@/components/marketing/form";
+import Questions from "@/components/marketing/questions";
 //import Pricing from "@/components/marketing/pricing";
 
 const HomePage = () => {
@@ -15,9 +16,11 @@ const HomePage = () => {
             <Companies />
             <Features />
             <Analysis />
-            <Integration />
-            <LanguageSupport />
+            <Social />
+            <Questions />
+            <Form />
             <CTA />
+            
         </Wrapper>
     )
 };

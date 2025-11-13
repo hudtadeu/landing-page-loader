@@ -21,12 +21,12 @@ export const generateMetadata = ({
     icons = [
         {
             rel: "icon",
-            url: "/icons/icon-dark.png",
+            url: "/images/logoc.png",
             media: "(prefers-color-scheme: light)",
         },
         {
             rel: "icon",
-            url: "/icons/icon.png",
+            url: "/images/logoc.png",
             media: "(prefers-color-scheme: dark)",
         },
     ],
