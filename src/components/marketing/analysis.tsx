@@ -9,10 +9,10 @@ const Analysis = () => {
             <Container>
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug">
-                        Intelligent marketing  <br /><span className="font-subheading italic">dashboard</span>
+                        Dashboard fiscal inteligente <br /><span className="font-subheading italic">XML Loader</span>
                     </h2>
                     <p className="text-base md:text-lg text-accent-foreground/80 mt-4">
-                        Gain detailed insights into your marketing performance and campaign metrics with our advanced analytics tools.
+                        Tenha controle total sobre seus documentos fiscais eletrônicos e métricas operacionais com ferramentas avançadas de análise.
                     </p>
                 </div>
             </Container>

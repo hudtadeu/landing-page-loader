@@ -31,7 +31,7 @@ const MobileMenu = () => {
                     <div className="pt-4 mt-4 border-t border-border">
                         <Link href="#" className="w-full">
                             <Button className="w-full" variant="blue">
-                                Get Started
+                                Automatizar Processo Fiscal
                             </Button>
                         </Link>
                     </div>

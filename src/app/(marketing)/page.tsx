@@ -6,7 +6,7 @@ import Features from "@/components/marketing/features";
 import Hero from "@/components/marketing/hero";
 import Integration from "@/components/marketing/integration";
 import LanguageSupport from "@/components/marketing/lang-support";
-import Pricing from "@/components/marketing/pricing";
+//import Pricing from "@/components/marketing/pricing";
 
 const HomePage = () => {
     return (
@@ -16,7 +16,6 @@ const HomePage = () => {
             <Features />
             <Analysis />
             <Integration />
-            <Pricing />
             <LanguageSupport />
             <CTA />
         </Wrapper>

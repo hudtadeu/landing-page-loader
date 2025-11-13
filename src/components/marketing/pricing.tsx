@@ -27,17 +27,17 @@ const Pricing = () => {
                 <Container>
                     <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
                         <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
-                            Find the right plan that suits <br className="hidden lg:block" /> <span className="font-subheading italic">your needs</span>
+                            Escolha o plano ideal para <br className="hidden lg:block" /> <span className="font-subheading italic">seu processo fiscal</span>
                         </h2>
                         <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
-                            Transform your marketing with AI-powered automation. Create campaigns faster, generate better content, and make smarter decisions in minutes.
+                            Automatize a entrada e organização dos documentos fiscais eletrônicos (NF-e, NFS-e e CT-e) com o XML LOADER, integrado ao ERP Datasul TOTVS®.
                         </p>
                     </div>
                 </Container>
 
                 <Container delay={0.2}>
                     <div className="flex items-center justify-center space-x-4 mt-6">
-                        <span className="text-base font-medium">Monthly</span>
+                        <span className="text-base font-medium">Mensal</span>
                         <button onClick={handleSwitch} className="relative rounded-full focus:outline-none">
                             <div className="w-12 h-6 transition rounded-full shadow-md outline-none bg-blue-500"></div>
                             <div
@@ -47,7 +47,7 @@ const Pricing = () => {
                                 )}
                             />
                         </button>
-                        <span className="text-base font-medium">Annually</span>
+                        <span className="text-base font-medium">Anual</span>
                     </div>
                 </Container>
             </div>
@@ -110,9 +110,9 @@ const Plan = ({ plan, billPlan }: { plan: PLAN, billPlan: Plan }) => {
                             className="text-sm text-center text-muted-foreground mt-3 mx-auto block"
                         >
                             {billPlan === "monthly" ? (
-                                "Billed monthly"
+                                "Cobrado mensalmente"
                             ) : (
-                                "Billed in one annual payment"
+                                "Cobrado em um pagamento anual"
                             )}
                         </motion.span>
                     </AnimatePresence>
@@ -120,7 +120,7 @@ const Plan = ({ plan, billPlan }: { plan: PLAN, billPlan: Plan }) => {
             </div>
             <div className="flex flex-col items-start w-full p-5 mb-4 ml-1 gap-y-2">
                 <span className="text-base text-left mb-2">
-                    Includes: 
+                    Inclui: 
                 </span>
                 {plan.features.map((feature, index) => (
                     <div key={index} className="flex items-center justify-start gap-2">
@@ -135,4 +135,4 @@ const Plan = ({ plan, billPlan }: { plan: PLAN, billPlan: Plan }) => {
     );
 };
 
-export default Pricing;
+export default Pricing; 
