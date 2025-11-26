@@ -30,21 +30,21 @@ const Analysis = () => {
                             <div className="absolute bottom-0 right-0 bg-blue-500 w-1/4 h-1/4 blur-[8rem] z-20"></div>
                             <div className="space-y-4">
                                 <h3 className="text-xl font-semibold">
-                                    Campaign Insights
+                                    Resumo Fiscal
                                 </h3>
                                 <p className="text-sm text-muted-foreground">
-                                    Track your campaign performance with data-driven insights.
+                                    Visualize o desempenho dos seus documentos fiscais eletrônicos.
                                 </p>
 
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-baseline">
                                         <div>
                                             <div className="text-3xl font-semibold">
-                                                $12,834
+                                                R$12.834
                                             </div>
                                             <div className="text-sm text-green-500 flex items-center gap-1 mt-2">
                                                 <TrendingUpIcon className="w-4 h-4" />
-                                                +25% from last month
+                                                +25% em relação ao mês anterior
                                             </div>
                                         </div>
                                         <div className="flex gap-2">
@@ -59,21 +59,36 @@ const Analysis = () => {
 
                                     <div className="space-y-2">
                                         <div className="grid grid-cols-4 text-sm text-muted-foreground py-2">
-                                            <div>Campaign</div>
+                                            <div>Tipo</div>
                                             <div>Status</div>
-                                            <div>Reach</div>
-                                            <div>ROI</div>
+                                            <div>Quantidade</div>
+                                            <div>Variação</div>
                                         </div>
                                         {[
-                                            { name: "Sales", status: "Active", reach: "45K", roi: "+32%" },
-                                            { name: "Emails", status: "Done", reach: "28K", roi: "+18%" },
-                                            { name: "Ads", status: "Active", reach: "62K", roi: "+45%" },
-                                        ].map((campaign) => (
-                                            <div key={campaign.name} className="grid grid-cols-4 text-sm py-2 border-t border-border/50">
-                                                <div>{campaign.name}</div>
-                                                <div>{campaign.status}</div>
-                                                <div>{campaign.reach}</div>
-                                                <div className="font-semibold">{campaign.roi}</div>
+                                            {
+                                                name: "NF-e",
+                                                status: "Recebida",
+                                                reach: "45K",
+                                                roi: "+32%",
+                                            },
+                                            {
+                                                name: "NFS-e",
+                                                status: "Processada",
+                                                reach: "28K",
+                                                roi: "+18%",
+                                            },
+                                            {
+                                                name: "CT-e",
+                                                status: "Recebida",
+                                                reach: "62K",
+                                                roi: "+45%",
+                                            }
+                                        ].map((doc) => (
+                                            <div key={doc.name} className="grid grid-cols-4 text-sm py-2 border-t border-border/50">
+                                                <div>{doc.name}</div>
+                                                <div>{doc.status}</div>
+                                                <div>{doc.reach}</div>
+                                                <div className="font-semibold">{doc.roi}</div>
                                             </div>
                                         ))}
                                     </div>
@@ -94,19 +109,19 @@ const Analysis = () => {
                             <div className="absolute bottom-0 right-0 bg-sky-500 w-1/4 h-1/4 blur-[8rem] z-20"></div>
                             <div className="space-y-4">
                                 <h3 className="text-xl font-semibold">
-                                    Audience Metrics
+                                    Métricas de Entrada
                                 </h3>
                                 <p className="text-sm text-muted-foreground">
-                                    Understand your audience behavior and engagement patterns.
+                                    Acompanhe o fluxo e engajamento dos documentos fiscais no sistema.
                                 </p>
 
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-baseline">
                                         <div>
-                                            <div className="text-3xl font-semibold">84,392</div>
+                                            <div className="text-3xl font-semibold">84.392</div>
                                             <div className="text-sm text-green-500 flex items-center gap-1 mt-2">
                                                 <TrendingUpIcon className="w-4 h-4" />
-                                                +12% engagement rate
+                                                +12% taxa de engajamento
                                             </div>
                                         </div>
                                         <div className="flex gap-2">
@@ -119,18 +134,33 @@ const Analysis = () => {
                                         </div>
                                     </div>
 
-                                    {/* Audience Table */}
+                                    {/* Tabela de Métricas de Entrada */}
                                     <div className="space-y-2">
                                         <div className="grid grid-cols-4 text-sm text-muted-foreground py-2">
-                                            <div>Channel</div>
-                                            <div>Users</div>
-                                            <div>Sessions</div>
-                                            <div>Conv. Rate</div>
+                                            <div>Origem</div>
+                                            <div>Empresas</div>
+                                            <div>Documentos</div>
+                                            <div>Taxa Process.</div>
                                         </div>
                                         {[
-                                            { channel: "Social", users: "32K", sessions: "45K", rate: "3.2%" },
-                                            { channel: "Email", users: "28K", sessions: "36K", rate: "4.5%" },
-                                            { channel: "Direct", users: "15K", sessions: "22K", rate: "5.1%" },
+                                            {
+                                                channel: "Fornecedor",
+                                                users: "32",
+                                                sessions: "45K",
+                                                rate: "98%",
+                                            },
+                                            {
+                                                channel: "Prefeitura",
+                                                users: "28",
+                                                sessions: "36K",
+                                                rate: "95%",
+                                            },
+                                            {
+                                                channel: "Transportadora",
+                                                users: "15",
+                                                sessions: "22K",
+                                                rate: "99%",
+                                            }
                                         ].map((metric) => (
                                             <div key={metric.channel} className="grid grid-cols-4 text-sm py-2 border-t border-border/50">
                                                 <div>{metric.channel}</div>

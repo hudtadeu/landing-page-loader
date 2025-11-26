@@ -7,7 +7,6 @@ import Wrapper from "../global/wrapper";
 import { Button } from "../ui/button";
 import MobileMenu from "./mobile-menu";
 
-// Função para scroll suave até a seção
 const scrollToSection = (href: string) => {
     if (href.startsWith("#")) {
         const el = document.querySelector(href);
@@ -49,11 +48,15 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <Link href="/login" className="hidden lg:block">
-                            <Button variant="outline">
-                                Entrar
-                            </Button>
-                        </Link>
+                        <Button
+                            variant="outline"
+                            className="hidden lg:block"
+                            onClick={() => {
+                                window.location.href = "https://loader-zeta-seven.vercel.app/sign-in";
+                            }}
+                        >
+                            Entrar
+                        </Button>
                         <Button
                             variant="blue"
                             className="hidden lg:block"

@@ -15,8 +15,8 @@ const Companies = () => {
                 <div className="relative w-full overflow-hidden pt-16">
                     <div
                         className="marquee flex items-center gap-0 max-w-none text-muted-foreground transition-all"
-                        style={{ animation: "marquee 30s linear infinite" }}>
-                        {[...Array(4)].map((_, i) => (
+                        style={{ animation: "marquee 60s linear infinite" }}>
+                        {[...Array(3)].map((_, i) => (
                             <div key={i} className="flex flex-row items-center gap-0">
                                 {/* Tear */}
                                 <div className="company-logo-wrapper">
@@ -53,6 +53,30 @@ const Companies = () => {
                                 {/* Equiplex */}
                                 <div className="company-logo-wrapper">
                                     <img src="/images/equiplexlogo.png" alt="Equiplex" className="company-logo" />
+                                </div>
+                                {/* Orizon */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/orizonlogo.png" alt="Orizon" className="company-logo" />
+                                </div>
+                                {/* TSEA */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/tsealogo.png" alt="TSEA" className="company-logo" />
+                                </div>
+                                {/* HEXAGON */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/hexagonlogo.png" alt="HEXAGON" className="company-logo" />
+                                </div>
+                                {/* NEXUS */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/nexuslogo.webp" alt="NEXUS" className="company-logo" />
+                                </div>
+                                 {/* SIDERURGICA ITABIRITO */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/vdlitabiritologo.png" alt="SIDERURGICA ITABIRITO" className="company-logo" />
+                                </div>
+                                 {/* MANTIQUEIRA */}
+                                <div className="company-logo-wrapper">
+                                    <img src="/images/mantiqueiralogo.svg" alt="MANTIQUEIRA" className="company-logo" />
                                 </div>
                             </div>
                         ))}
